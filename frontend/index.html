@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <title>Mentor</title>
+
+    <!--Font Roboto Mono-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        #map {
+            height: 100%;
+        }
+
+        /*Google Logo*/
+        #map > div > div > div:nth-child(3) {
+            bottom: 17px !important;
+            right: 55px !important;
+            left: unset !important;
+        }
+    </style>
+</head>
+<body>
+
+<!--Scroller-->
+<link href="./src/style/scrollbar-style.css" rel="stylesheet">
+
+<!--Icons-->
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
+<link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css"
+      media="all">
+<!--<link rel="stylesheet" type="text/css" href="./src/style/toastify.css">-->
+
+<!--Some Libs-->
+<script src="./libs/moment/moment.min.js"></script>
+
+<!--App-->
+<script src="mentor-app.js" type="module"></script>
+
+
+
+
+<!--<script src="src/google/map.js" type="module"></script>-->
+<!--<script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>-->
+
+<!--<script>-->
+<!--    function initMapPlaceholder() {-->
+<!--        // window.initMap()-->
+<!--    }-->
+<!--</script>-->
+
+<!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
+<!--<meta name="google-signin-client_id" content="798008696513-0pvkj8gfqnj2c4l7ubbp7car51ohuci0.apps.googleusercontent.com">-->
+<!--<div class="g-signin2" data-onsuccess="onSignIn"></div>-->
+<!--<script>-->
+<!--    function onSignIn(googleUser) {-->
+<!--        var profile = googleUser.getBasicProfile();-->
+<!--        console.log('ID: ' + profile.getId()); // Do not send to your backend! Use an ID token instead.-->
+<!--        console.log('Name: ' + profile.getName());-->
+<!--        console.log('Image URL: ' + profile.getImageUrl());-->
+<!--        console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.-->
+<!--    }-->
+
+<!--    async function _post(url, body) {-->
+<!--        const response = await fetch(url, {-->
+<!--            method: "POST",-->
+<!--            headers: {-->
+<!--                "Content-Type": "application/json; charset=utf-8",-->
+<!--            },-->
+<!--            body: JSON.stringify(body),-->
+<!--        });-->
+
+<!--        if (!response.ok) {-->
+<!--            throw {-->
+<!--                statusText: response.statusText,-->
+<!--                error: await response.text()-->
+<!--            }-->
+<!--        }-->
+<!--        return await response.json()-->
+<!--    }-->
+<!--</script>-->
+
+
+<mentor-app></mentor-app>
+
+<!--<div id="map"></div>-->
+<!--<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRph5WHj2kIv7c1tjBxWZ_lNMPs4QAQN8&callback=initMapPlaceholder"-->
+<!--        defer></script>-->
+
+</body>
+</html>
